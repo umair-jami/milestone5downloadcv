@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Change to .js if you are not using a TypeScript compiler -->
+    <title>Advanced Resume Builder</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="main-title">Advanced Resume Builder</h1>
+    </header>
+    <main class="main-content">
+        <form id="resumeForm" class="resume-form">
+            <!-- Personal Information -->
+            <section class="form-section personal-info-section">
+                <h2 class="section-title">Personal Information</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" name="name" id="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" name="email" id="email" class="form-input" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone:</label>
+                        <input type="tel" name="phone" id="phone" class="form-input" placeholder="03000000000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profilePicture" class="form-label">Profile Picture:</label>
+                        <input type="file" id="profilePicture" name="ProfilePicture" class="form-input-file" accept="image/*" required>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="form-section education-section" id="educationSection">
+                <h2 class="section-title">Education</h2>
+                <textarea name="education" id="education" class="form-textarea" placeholder="List your educational background" required></textarea>
+            </section>
+
+            <!-- Experience -->
+            <section class="form-section experience-section" id="experienceSection">
+                <h2 class="section-title">Experience</h2>
+                <textarea name="experience" id="experience" class="form-textarea" placeholder="Describe your past work experience" required></textarea>
+            </section>
+
+            <!-- Skills -->
+            <section class="form-section skills-section" id="skillsSection">
+                <h2 class="section-title">Skills</h2>
+                <textarea name="skills" id="skills" class="form-textarea" placeholder="List your skills" required></textarea>
+            </section>
+
+            <button type="submit" class="submit-button">Generate Resume</button>
+            <div id="resumeOutput" class="resume-output"></div>
+        </form>
+    </main>
+</body>
+</html>

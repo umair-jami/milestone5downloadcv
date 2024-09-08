@@ -1,0 +1,145 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #2c3e50;
+}
+
+/* Header */
+.header {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-title {
+    color: #ecf0f1;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.resume-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+/* Inputs */
+.form-input, 
+.form-textarea, 
+.form-input-file {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #21618c;
+}
+
+/* Toggle Buttons */
+.toggle-button {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #2980b9;
+}
+
+/* Resume Output Styling */
+.resume-output {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #ecf0f1;
+    border: 2px solid #2980b9;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #2980b9;
+}
